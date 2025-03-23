@@ -1,0 +1,14 @@
+name: Call the Reusable Deploy
+
+on:
+  push:
+    branches:
+      - '*'  # trigger on all branches
+
+permissions: write-all # required to read the workflow from the other repo
+
+jobs:
+  call-deploy:
+    uses: koch-capabilities/KGS-Dev-Ops-Terrorform-Template-Pipeline/.github/workflows/deploy.yml@main
+    with:
+      environment: "${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}"
