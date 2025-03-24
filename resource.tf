@@ -1,15 +1,15 @@
 //region Project
-  project = "kgs-o365cloudservices-terraform"
+  project = "amigo"
 
   project_name= "template_tf"
 
   tags = {
-    itemid= "O365OpExATemplate",
-    blc= 1539,
-    costcenter= 54108,
-    owner= "KGSOpEx@kbslp.com"
+    itemid= "amigotemplate",
+    blc= 1234,
+    costcenter= 1234,
+    owner= "amigo.com"
   }
 
-  backend_bucket_name = "kgs-terraform-github-state-${var.account}"
+  backend_bucket_name = "amigo-terraform-github-state-${var.account}"
   backend_bucket_key = "${project_name}/terraform/state.tfstate"
 //endregion
