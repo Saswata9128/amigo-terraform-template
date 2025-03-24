@@ -3,7 +3,7 @@ terraform {
   bucket = "backend_bucket_name"
   key =  "backend_bucket_key"
   region =  "region"
-  dynamodb_table = "kgs-terraform-github-state"
+  dynamodb_table = "amigo-terraform-github-state"
   encrypt =  true
     }
 }
